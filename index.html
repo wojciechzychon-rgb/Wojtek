@@ -3,101 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wojciech Żychoń – Redagowanie Pism Procesowych i Urzędowych</title>
+    <title>Wojciech Żychoń - Usługi Administracyjne</title>
     <style>
         :root {
             --primary-color: #1e3a8a;
-            --text-color: #333333;
+            --secondary-color: #3b82f6;
+            --text-color: #1f2937;
             --bg-color: #f8fafc;
             --card-bg: #ffffff;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
             margin: 0;
             padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
         }
 
         header {
             background-color: var(--primary-color);
             color: white;
+            padding: 1.5rem 2rem;
             text-align: center;
-            padding: 2.5rem 1rem;
-        }
-
-        header h1 {
-            margin: 0 0 0.5rem 0;
-            font-size: 2.2rem;
-        }
-
-        header p {
-            margin: 0;
-            font-size: 1.1rem;
-            opacity: 0.9;
         }
 
         .container {
             max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
+            margin: 0 auto;
+            padding: 2rem;
         }
 
-        .hero-section {
-            background: var(--card-bg);
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        /* Główny układ sekcji powitalnej (Hero) z podziałem na kolumny */
+        .hero {
             display: flex;
-            flex-direction: row;
             align-items: center;
-            gap: 2.5rem;
+            justify-content: space-between;
+            gap: 3rem;
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             flex-wrap: wrap;
         }
 
-        .hero-text {
+        .hero-content {
             flex: 1;
-            min-width: 280px;
+            min-width: 300px;
         }
 
-        .hero-text h2 {
+        .hero-content h1 {
             color: var(--primary-color);
             margin-top: 0;
-            font-size: 1.8rem;
+            font-size: 2.2rem;
         }
 
+        .hero-content p {
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+
+        /* Prawa kolumna ze zdjęciem */
         .hero-image {
-            flex: 0 0 320px;
-            text-align: center;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            min-width: 280px;
         }
 
         .hero-image img {
             width: 100%;
-            max-width: 300px;
+            max-width: 320px;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
             object-fit: cover;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border: 4px solid #ffffff;
         }
 
         .contact-box {
-            margin-top: 1.5rem;
-            padding: 1rem;
-            background: #f1f5f9;
-            border-left: 4px solid var(--primary-color);
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #eff6ff;
+            border-left: 5px solid var(--secondary-color);
             border-radius: 4px;
         }
 
-        .contact-box p {
-            margin: 0.4rem 0;
-            font-weight: 600;
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .contact-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-box li {
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
         }
 
         .contact-box a {
-            color: var(--primary-color);
+            color: var(--secondary-color);
             text-decoration: none;
+            font-weight: bold;
         }
 
         .contact-box a:hover {
@@ -107,19 +119,17 @@
         footer {
             text-align: center;
             padding: 1.5rem;
+            background-color: #111827;
+            color: #9ca3af;
             margin-top: 3rem;
-            color: #64748b;
             font-size: 0.9rem;
-            border-top: 1px solid #e2e8f0;
         }
 
+        /* Responsywność dla urządzeń mobilnych */
         @media (max-width: 768px) {
-            .hero-section {
+            .hero {
                 flex-direction: column-reverse;
-                text-align: center;
-            }
-            .contact-box {
-                text-align: left;
+                padding: 1.5rem;
             }
         }
     </style>
@@ -127,29 +137,31 @@
 <body>
 
     <header>
-        <h1>Wojciech Żychoń</h1>
-        <p>Profesjonalne wsparcie administracyjne i doradztwo proceduralne</p>
+        <h2>Wojciech Żychoń - Biuro i Usługi Administracyjne</h2>
     </header>
 
-    <main class="container">
-        <section class="hero-section">
-            <!-- Tekst i opisy po lewej stronie -->
-            <div class="hero-text">
-                <h2>Redagowanie Pism Procesowych i Urzędowych</h2>
-                <p>Oferuję niezależną pomoc w sporządzaniu formalnych pism administracyjnych, odwołań oraz dokumentów urzędowych. Gwarantuję rzetelność, wieloletnie doświadczenie w urzędach i procedurach oraz indywidualne podejście do każdej sprawy.</p>
+    <div class="container">
+        <section class="hero">
+            <!-- Lewa strona: Treść i opis usług -->
+            <div class="hero-content">
+                <h1>Profesjonalne wsparcie administracyjne</h1>
+                <p>Świadczę kompleksowe i niezależne usługi w zakresie wsparcia biurowego, sporządzania pism urzędowych, odwołań oraz dokumentacji administracyjnej na terenie całego kraju.</p>
                 
                 <div class="contact-box">
-                    <p>📞 Telefon: <a href="tel:736939647">736 939 647</a></p>
-                    <p>📧 E-mail: <a href="mailto:wojciech.zychon@gmail.com">wojciech.zychon@gmail.com</a></p>
+                    <h3>Dane kontaktowe:</h3>
+                    <ul>
+                        <li>📧 E-mail: <a href="mailto:wojciech.zychon@gmail.com">wojciech.zychon@gmail.com</a></li>
+                        <li>📞 Telefon: <a href="tel:736939647">736 939 647</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Zdjęcie po prawej stronie -->
+            <!-- Prawa strona: Twoje zdjęcie -->
             <div class="hero-image">
-                <img src="Zdjęcie na stronę firmową - Wojtek.jpg" alt="Wojciech Żychoń">
+                <img src="Wojtek.jpg" alt="Wojciech Żychoń">
             </div>
         </section>
-    </main>
+    </div>
 
     <footer>
         <p>&copy; 2026 Wojciech Żychoń. Wszelkie prawa zastrzeżone.</p>
