@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wojciech Żychoń – Redagowanie Pism Procesowych i Urzędowych</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --text-color: #333333;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .hero-section {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .hero-text h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .hero-image {
+            flex: 0 0 320px;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            object-fit: cover;
+        }
+
+        .contact-box {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #f1f5f9;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .contact-box p {
+            margin: 0.4rem 0;
+            font-weight: 600;
+        }
+
+        .contact-box a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .contact-box {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Wojciech Żychoń</h1>
+        <p>Profesjonalne wsparcie administracyjne i doradztwo proceduralne</p>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <!-- Tekst i opisy po lewej stronie -->
+            <div class="hero-text">
+                <h2>Redagowanie Pism Procesowych i Urzędowych</h2>
+                <p>Oferuję niezależną pomoc w sporządzaniu formalnych pism administracyjnych, odwołań oraz dokumentów urzędowych. Gwarantuję rzetelność, wieloletnie doświadczenie w urzędach i procedurach oraz indywidualne podejście do każdej sprawy.</p>
+                
+                <div class="contact-box">
+                    <p>📞 Telefon: <a href="tel:736939647">736 939 647</a></p>
+                    <p>📧 E-mail: <a href="mailto:wojciech.zychon@gmail.com">wojciech.zychon@gmail.com</a></p>
+                </div>
+            </div>
+
+            <!-- Zdjęcie po prawej stronie -->
+            <div class="hero-image">
+                <img src="Zdjęcie na stronę firmową - Wojtek.jpg" alt="Wojciech Żychoń">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wojciech Żychoń. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
